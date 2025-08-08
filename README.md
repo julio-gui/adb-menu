@@ -63,10 +63,6 @@ Não requer root e não instala nada no dispositivo.
 #### Principais recursos:
 - Espelhamento de vídeo e áudio.
 - Controle total via teclado/mouse.
-- Qualidade de até 1920×1080 ou superior.
-- Baixa latência (~35~70ms).
-- Gravação de tela.
-- Modo OTG (sem depuração USB).
 
 #### Instalação no Linux (Debian/Ubuntu):
 ```bash
