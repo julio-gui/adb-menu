@@ -39,41 +39,17 @@ Este programa depende dos seguintes pacotes:
 ### **ADB (Android Debug Bridge)**
 O ADB é uma ferramenta oficial do Android para comunicação entre computador e dispositivos Android.
 
-Instalação no Linux (Debian/Ubuntu):
-```bash
-sudo apt install android-tools-adb
-```
-
-Instalação no Windows:
-- Baixe e instale o **Android Platform Tools**:
-  [https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
-
----
-
 ### **scrcpy (v3.3.1)**
 
-> **ATENÇÃO**: O único repositório oficial do scrcpy é:  
-> [https://github.com/Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)  
-> **Não** baixe versões de sites não-oficiais, mesmo que tenham "scrcpy" no nome.
-
-O scrcpy é um aplicativo que espelha a tela e o áudio de dispositivos Android, permitindo controle via teclado e mouse.  
-Funciona em Linux, Windows e macOS.
-Não requer root e não instala nada no dispositivo.
+- O scrcpy é um aplicativo que espelha a tela e o áudio de dispositivos Android, permitindo controle via teclado e mouse.  
+- Funciona em Linux, Windows e macOS.
+- Não requer root e não instala nada no dispositivo.
 
 #### Principais recursos:
 - Espelhamento de vídeo e áudio.
 - Controle total via teclado/mouse.
 
-#### Instalação no Linux (Debian/Ubuntu):
-```bash
-sudo apt install scrcpy
-```
-
-Instalação no Windows:
-- Baixe do repositório oficial:  
-  [https://github.com/Genymobile/scrcpy/releases](https://github.com/Genymobile/scrcpy/releases)
-
-Documentação completa:  
+Documentação completa do scrcpy:  
 [https://github.com/Genymobile/scrcpy/blob/master/README.md](https://github.com/Genymobile/scrcpy/blob/master/README.md)
 
 ---
@@ -82,12 +58,12 @@ Documentação completa:
 
 Para compilar no Linux:
 ```bash
-gcc adb-menu.c -o adb-menu
+gcc .\src\adb-menu.c -o .\bin\adb-menu
 ```
 
 No Windows (usando MinGW):
-```bash
-gcc adb-menu.c -o adb-menu.exe
+```cmd
+gcc .\src\adb-menu.c -o .\bin\adb-menu.exe
 ```
 
 ---
@@ -98,7 +74,11 @@ gcc adb-menu.c -o adb-menu.exe
 2. Ative **Depuração USB** nas opções de desenvolvedor do Android.
 3. Execute:
 ```bash
-./adb-menu
+./bin/adb-menu
+```
+
+```Windows
+.\bin\adb-menu-exe
 ```
 
 No Windows, execute o programa (normalmente adb-menu.exe).
